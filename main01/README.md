@@ -17,10 +17,10 @@ Nossa estrutura permanece quase igual, porem agora, temos mais conteúdo de leit
 O código-fonte deste programa tem poucas alterações em relação ao código da etapa anterior.
 
 Entre as diferenças, aparecem:
-'''
+```
 5   int a, b;
 13  int c = 0;
-'''
+```
 
 Isto é a declaração de variáveis. Nossas variáveis a, b e c são do tipo inteiro. Em C, precisamos declarar as variáveis antes de podermos acessá-las. Outra característica do C é que precisamos especificar o tipo da variável na declaração. Isso porque o C é uma linguagem declarativa. O Python, por exemplo, não necessita de declaração de variáveis, ainda que, em alguns casos, seja recomendável inicilizar uma variável, o que parece muito com uma declaração, mas não é. Em C, a declaração não é uma recomendação opicional, é obrigatório!
 
@@ -91,22 +91,20 @@ O pré-processador pega todo conteúdo dessa biblioteca e acrecenta em um arquiv
 
 Você pode ignorar o GCC e chamar o CPP por conta própria para ver o que ele faz.
 
-'''
+```
 cpp main.c > main.i
-'''
+```
 
 O operador ">" no terminal do Linux redireciona a saída do comando à esquerda. Portanto, a saída do CPP ao invés de ser exibida na tela, será gravada no arquivo main.i.
 
 Se quiser exibir o conteúdo do arquivo, você pode executar o comando:
 
-'''
-cat main.i
-'''
+```cat main.i```
 Ou para poupar tempo, você pode imprimir no arquivo e na tela ao mesmo tempo usando o operador "|" (pipe) e o comando tee
 
-'''
+```
 cpp main.c | tee main.i
-'''
+```
 
 Observe a saída e veja o tanto de código que o cpp adicionou ao seu código-fonte. Nosso código encontra-se no final do código-fonte expandido. Observe a expansão do define. O que um define faz é substituir no código-fonte aquela etiqueta pelo valor atribuído a ela, como o comando buscar e substituir do Word ou do Visual Studio Code. Veja com é um comportamento diferente do que aconteceu com as variáveis.
 

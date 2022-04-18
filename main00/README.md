@@ -53,13 +53,13 @@ Por hora, devemos apenas compilar para sabermos se nosso programa funciona.
 
 No Linux, temos um programa chamado gcc. Este é um conjunto de ferramentas (programas especiais) que farão todo o trabalho pesado. Podemos ter o gcc no Windows também.
 
-Se digitarmos ''' gcc main.c ''', no terminal o gcc criará um arquivo binário executável. Por padrão, o nome desse arquivo é a.out.
+Se digitarmos ``` gcc main.c ```, no terminal o gcc criará um arquivo binário executável. Por padrão, o nome desse arquivo é a.out.
 
 Para executá-lo, digite o seguinte comando no terminal:
 
-'''
+```
 ./a.out
-'''
+```
 
 ## Lidando com o retorno de um programa no Linux
 
@@ -77,9 +77,9 @@ O que ocorreu com o nosso retorno? Bem, um comando (um programa) executado no te
 Aqui vai uma dica de Linux: o retorno do último comando fica armazenado em uma variável especial. É a variável $?. O nome não ajuda, mas este é um atalho muito útil!
 
 Apos executar o programa, execute o comando
-'''
+```
 echo $?
-'''
+```
 
 Pronto! Você já fez o seu primeiro programa e já sabe como acessar o retorno de uma função principal.
 
