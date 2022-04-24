@@ -12,6 +12,7 @@ struct item* adiciona_a_pilha(struct item* pilha, int novo_valor);
 struct item* retira_da_pilha(struct item* pilha);
 struct item* limpa_lista(struct item* pilha);
 
+unsigned int tamanho_lista(struct item* lista);
 
 void print_lista();
 

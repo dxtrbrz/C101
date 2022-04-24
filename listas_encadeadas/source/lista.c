@@ -3,17 +3,6 @@
 #include "lista.h"
 
 
-void print_lista(struct item* ptr) {
-  if (ptr) {
-    do {
-      printf("%d\t",ptr->valor);
-      ptr = ptr->prox;
-    } while (ptr);
-    printf("\n");
-  }
-  else printf("vazia\n");
-}
-
 struct item* cria_lista(int tamanho) {
     struct item* prox = NULL;
     register int i=tamanho;
@@ -72,8 +61,28 @@ struct item* adiciona_a_pilha(struct item* pilha, int novo_valor) {
 struct item* limpa_lista(struct item* lista) {
   do {
     lista = retira_da_pilha(lista);
-    print_lista(lista);
   } while (lista);
   return NULL;
 }
 
+unsigned int tamanho_lista(struct item* lista) {
+  struct item* item_atual = lista;
+  register unsigned int contador = 0;
+
+  while (item_atual) {
+    contador++;
+    item_atual = item_atual->prox;
+  }
+  return contador;
+}
+
+void print_lista(struct item* ptr) {
+  if (ptr) {
+    do {
+      printf("%d\t",ptr->valor);
+      ptr = ptr->prox;
+    } while (ptr);
+    printf("\n");
+  }
+  else printf("vazia\n");
+}
