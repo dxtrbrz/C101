@@ -39,7 +39,7 @@ struct item* retira_da_pilha(struct item* pilha) {
   else return NULL;
 }
 
-struct item* adciona_a_pilha(struct item* pilha, int novo_valor) {
+struct item* adiciona_a_pilha(struct item* pilha, int novo_valor) {
   struct item* novo_item = NULL;
   novo_item = malloc(sizeof(struct item));
   novo_item->valor = novo_valor;

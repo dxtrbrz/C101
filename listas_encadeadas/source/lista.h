@@ -7,7 +7,7 @@ struct item {
 };
 
 struct item* cria_lista(int tamanho);
-struct item* adciona_a_pilha(struct item* pilha, int novo_valor);
+struct item* adiciona_a_pilha(struct item* pilha, int novo_valor);
 struct item* retira_da_pilha(struct item* pilha);
 struct item* limpa_lista(struct item* pilha);
 void print_lista();

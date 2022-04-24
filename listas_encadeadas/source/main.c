@@ -10,7 +10,7 @@ int main() {
   print_lista(head);
   head = retira_da_pilha(head);
   print_lista(head);
-  head = adciona_a_pilha(head,10);
+  head = adiciona_a_pilha(head,10);
   print_lista(head);
   head = limpa_lista(head);
 
