@@ -1,5 +1,7 @@
 # Expanded source code
 *.i
+# Assembly
+*.s
 # Prerequisites
 *.d
 

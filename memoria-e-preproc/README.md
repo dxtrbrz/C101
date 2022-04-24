@@ -1,4 +1,4 @@
-# Compilação (Parte 1: pré-compilação)
+# Memória e pré-processamento
 
 Continuaremos com um programa bastante simples. Mas agora, faremos pequenas alterações para que ele execute uma soma e imprima algumas informações. Parece um passo pequeno demais, mas na verade, estamos correndo em ritmo acelerado pois vamos estudar diversos conceitos de computação neste artigo.
 
@@ -47,9 +47,9 @@ No sentido estrito, a memória do computador é a RAM, chamada de memória volá
 
 [AOC: Arquitetura Harvard](https://pt.wikipedia.org/wiki/Arquitetura_Harvard)
 
-No sentido amplo, o armazenamento pode ser considerado um tipo de memória. Porém é mais lento e está separado do processador pelo barramento de entrada e saída, enquanto a RAM possui um barramento exclusivo.
+No sentido amplo, o armazenamento pode ser considerado um tipo de memória de média e longa duração. Porém é mais lento e está separado do processador pelo barramento de entrada e saída (I/O Bus), enquanto a RAM possui um barramento exclusivo.
 
-Com o surgimento das memórias de estado sólido (SSD) e os barramentos NVME, a diferença de velocidade caiu drásticamente. Mas estando em um meio de comunicação compartilhado com todos os periféricos, o SSD ainda pode ficar esperando que o barramento esteja desocupado para que ele possa enviar ou receber dados. Se a RAM estivesse no barramento de E/S, nosso computador travaria constantemente, já que a execução de qualquer programa depende do acesso à ela.
+Com o surgimento das memórias de estado sólido (SSD) e a especificação NVMe, a diferença de velocidade caiu drásticamente. Mas estando em um meio de comunicação compartilhado com todos os periféricos, o SSD ainda pode ficar esperando que o barramento esteja desocupado para que ele possa enviar ou receber dados. Se a RAM estivesse no barramento de E/S, nosso computador travaria constantemente, já que a execução de qualquer programa depende do acesso à ela.
 [EAC, Hierarquia de memória](https://pt.wikipedia.org/wiki/Hierarquia_da_mem%C3%B3ria)
 
 Para nós, memória sempre será no sentido estrito, isto é, a RAM. Enquando os SSDs, HDs, pendrives e CD-ROMs serão chamados de armazenamento.

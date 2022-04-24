@@ -1,6 +1,4 @@
-# C 101
-## Uma breve introdução
-
+# Introdução (Função main e retorno)
 Este primeiro trecho de código é uma estrutura básica de um programa em C. Isto é o mínimo necessário para que o seu programa seja compilado.
 
 ## Include
@@ -21,15 +19,6 @@ Dentro dos parêntesis, ficariam o que chamamos de argumentos da função. Trata
 uto
 Em seguida, temos as chaves {}. É entre as chaves que se encontra o código que determina o que uma função faz.
 
-### A metáfora de uma indústria
-Pense em uma indústria, por um momento. Uma função é como uma indústria que recebe insumos determinados (argumentos), executa diversas ações para processar estes insumos e, por fim, tem como resultado um determinado produto (retorno).
-
-Eventualmente, uma indústria pode consumir produtos de outra indústria. Uma indústria de automóveis pode não fabricar vidros, bancos e até mesmo motores. Ela apenas conta que outra indústria fabrique estes itens e que eles estejam disponíveis no momento em que eles forem necessários.
-
-Em um programa, podemos ter funções que chamam funções para processar os dados.
-
-Nosso programa, no entanto, é extremamente simples. Ele simplesmente retorna um inteiro, tal qual a função main exige.
-
 ## Compilação
 
 O processo de compilação é composto por várias fases, como veremos em seguida. Por hora, considere que compilar é transformar o código de alto nível em um código de baixo nível.
@@ -43,7 +32,6 @@ Isto fala sobre o nível de abstração. Um línguágem de alto nível é uma li
 Um baixo nível de abstração significa que estamos muito perto de como um computador "pensa". Talvez isto nunca tenha passado na sua mente, mas um computador não entende o nosso idioma. Um computador é como uma cálculadora. Há muitos níveis de abstração envolvidos entre vocês falar o nome de sua assitente virtual, dar um comando em Português e uma ação ser executada.
 
 Mas no menor nível de abstração, um computador só entende números. Nossos computadores modernos, só entendem números em uma representação específica chamada base numérica binária.
-
 
 ## Como compilar
 
@@ -61,7 +49,17 @@ Para executá-lo, digite o seguinte comando no terminal:
 ./a.out
 ```
 
-## Lidando com o retorno de um programa no Linux
+## O retorno
+### A metáfora de uma indústria
+Pense em uma indústria, por um momento. Uma função é como uma indústria que recebe insumos determinados (argumentos), executa diversas ações para processar estes insumos e, por fim, tem como resultado um determinado produto (retorno).
+
+Eventualmente, uma indústria pode consumir produtos de outra indústria. Uma indústria de automóveis pode não fabricar vidros, bancos e até mesmo motores. Ela apenas conta que outra indústria fabrique estes itens e que eles estejam disponíveis no momento em que eles forem necessários.
+
+Em um programa, podemos ter funções que chamam funções para processar os dados.
+
+Nosso programa, no entanto, é extremamente simples. Ele simplesmente retorna um inteiro, tal qual a função main exige.
+
+### Lidando com o retorno de um programa no Linux
 
 Bem, o resultado pode parecer frustrante, pois o programa não faz absolutamente nada!
 Na verdade, isto é algo que você precisa saber. Um computador só é tão esperto quanto o código que o programa. Ele nunca faz nada além do que foi pedido. Neste caso, não pedimos nada e não recebemos nada.
@@ -84,3 +82,4 @@ echo $?
 Pronto! Você já fez o seu primeiro programa e já sabe como acessar o retorno de uma função principal.
 
 Tente alterar o valor do retorno, recompilar e reexibir o retorno. E não se acostume, apenas este primeiro contato é suoerficial assim. Logo, logo estaremos tratando em maior profundidade os assuntos.
+
