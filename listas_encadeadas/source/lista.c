@@ -29,6 +29,28 @@ struct item* cria_lista(int tamanho) {
   return novo_item;
 }
 
+struct item* adiciona_a_lista(struct item* lista, int valor, unsigned int pos) {
+  register unsigned int idx=0;
+
+  struct item* item_atual = lista;
+
+  while (item_atual->prox) {
+    if (idx == pos) {
+      struct item* novo_item = NULL;
+      novo_item = malloc(sizeof(struct item));
+
+      novo_item->prox = item_atual->prox;
+      novo_item->valor = valor;
+      item_atual->prox = novo_item;
+
+    }
+    idx++;
+    item_atual = item_atual->prox;
+    
+  }
+  return lista;
+}
+
 struct item* retira_da_pilha(struct item* pilha) {
   if (pilha) {
     struct item* temp = pilha;
@@ -54,3 +76,4 @@ struct item* limpa_lista(struct item* lista) {
   } while (lista);
   return NULL;
 }
+

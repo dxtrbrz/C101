@@ -12,6 +12,7 @@ int main() {
   print_lista(head);
   head = adiciona_a_pilha(head,10);
   print_lista(head);
+  head = adiciona_a_lista(head, 23, 5);
   head = limpa_lista(head);
 
   return 0;
